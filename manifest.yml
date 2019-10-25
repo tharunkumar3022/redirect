@@ -1,0 +1,12 @@
+---
+applications
+- name: MY-APP
+  memory: 256M
+  instances: 2
+  buildpack: php_buildpack
+  disk_quota: 1G
+  health-check-type: process
+  timeout: 60
+  routes:
+    - route: testing-app.cfapps.io
+   
